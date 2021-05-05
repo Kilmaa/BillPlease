@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Bill Please</string>
+    <string name="txt1">Amount</string>
+    <string name="txt2">Num of Pax</string>
+    <string name="txt3">Discount(%)</string>
+    <string name="option1">Cash</string>
+    <string name="option2">PayNow</string>
+    <string name="display1">Total bills: </string>
+    <string name="display2">Each pays: </string>
+
+</resources>
