@@ -8,25 +8,26 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/amtTxt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/txt1" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/amtValue"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/numTxt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/txt2" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/numValue"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -38,7 +39,7 @@
         android:orientation="horizontal">
 
         <ToggleButton
-            android:id="@+id/toggleButton"
+            android:id="@+id/SVS"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -47,77 +48,74 @@
             android:textOn="SVS" />
 
         <ToggleButton
-            android:id="@+id/toggleButton2"
+            android:id="@+id/GST"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="ToggleButton"
-            android:textOff="No GST" />
+            android:textOff="No GST"
+            android:textOn="GST" />
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/discountTxt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/txt3" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/discountValue"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName" />
 
-    <LinearLayout
+    <RadioGroup
+        android:id="@+id/paymentMethod"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_height="wrap_content">
 
         <RadioButton
-            android:id="@+id/radioButton2"
-            android:layout_width="wrap_content"
+            android:id="@+id/cash"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/option1" />
 
         <RadioButton
-            android:id="@+id/radioButton"
-            android:layout_width="wrap_content"
+            android:id="@+id/paynow"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/option2" />
-    </LinearLayout>
+    </RadioGroup>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <ToggleButton
-            android:id="@+id/toggleButton4"
+        <Button
+            android:id="@+id/split"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="ToggleButton"
-            android:textOff="No Split"
-            android:textOn="Split" />
+            android:text="@string/Btn1" />
 
-        <ToggleButton
-            android:id="@+id/toggleButton3"
+        <Button
+            android:id="@+id/reset"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="ToggleButton"
-            android:textOff="No Reset"
-            android:textOn="Reset" />
+            android:text="@string/Btn2" />
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/totalBill"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/display1" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/eachPays"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/display2" />

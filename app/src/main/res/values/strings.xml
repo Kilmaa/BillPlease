@@ -5,7 +5,9 @@
     <string name="txt3">Discount(%)</string>
     <string name="option1">Cash</string>
     <string name="option2">PayNow</string>
-    <string name="display1">Total bills: </string>
-    <string name="display2">Each pays: </string>
+    <string name="Btn1">Split</string>
+    <string name="Btn2">Reset</string>
+    <string name="display1"></string>
+    <string name="display2"></string>
 
 </resources>
